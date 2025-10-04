@@ -5,27 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoff Cowlfeather</title>
   <style>
-    html, body {margin: 0; padding:0; font-family: Tahoma, Geneva, sans-serif;}
+    /* html, body {margin: 0; padding:0; font-family: Tahoma, Geneva, sans-serif;} */
+    html {
+      min-height: 100%;
+    }
+
     body {
-      padding: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
       background-image: linear-gradient(#a2d2ff, #cdb4db, #ffafcc);
-      min-height: 100vh;
+      min-height: 100%;
+      font-family: Tahoma, Geneva, sans-serif;
       display: flex;
       justify-content: center;
     }
-    img {max-width: 100%;}
+
+    /* img {max-width: 100%;} */
 
     .main__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 65%;
-      
+      max-width: 640px;
+      margin: auto;
     }
 
-    .selfie {
-      width: 160px;
-      border-radius: 50%;
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      border-radius: 128px;
+      object-fit: cover;
     }
 
     .socials__row {
@@ -41,29 +47,34 @@
     .links__row {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-
+      gap: 16px;
+      width: 100%;
+      margin: 16px;
     }
 
-    .link__container {
-      padding: 2px;
-      background-color: aquamarine;
+    .link__container { 
+      padding: 4px;
+      background-color: rgb(127, 255, 212, 0.5);
       width: 100%;
       display: flex;
       align-items: center;
-      text-align: center;
+      justify-content: center;
       border-radius: 100px;
     }
 
-    .link__img {
-      width: 50px;
-      border-radius: 50%;
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      
     }
 
     .link__item {
       text-decoration: none;
       color: black;
       font-weight: bold;
+      margin: 0 auto;
     }
       
     
@@ -72,7 +83,7 @@
 <body>
   <div class="main__container">
     <div class="image__row">
-      <img class="selfie" src="selfie_two.jpg" alt="portait of our main character">
+      <img class="avatar-image" src="images/selfie_two.jpg" alt="portait of our main character">
     </div>
 
     <div class="name__row">
@@ -80,60 +91,47 @@
     </div>
 
     <div class="socials__row">
-      <a href="https://github.com/" target="_blank"><img class="social__icons"  src="github-brands-solid-full.svg"></a>
+      <a href="https://github.com/" target="_blank"><img class="social__icons"  src="images/github-brands-solid-full.svg"></a>
 
-      <a href="https://www.linkedin.com/" target="_blank"><img class="social__icons"  src="linkedin-brands-solid-full.svg"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img class="social__icons"  src="images/linkedin-brands-solid-full.svg"></a>
 
-      <a href="https://www.instagram.com/" target="_blank"><img class="social__icons"  src="instagram-brands-solid-full (1).svg"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class="social__icons"  src="images/instagram-brands-solid-full (1).svg"></a>
 
-      <a href="https://x.com/" target="_blank"><img class="social__icons"  src="twitter-brands-solid-full.svg"></a>
+      <a href="https://x.com/" target="_blank"><img class="social__icons"  src="images/twitter-brands-solid-full.svg"></a>
     </div>
 
     <div class="links__row">
       <div class="link__container">
-        <img class="link__img" src="eggs.jpg" alt="bundle of eggs">
-        <a class="link__item" href="https://eggs.ca/">Get Cracking</a>
+        <img class="thumbnail" src="images/eggs.jpg" alt="bundle of eggs">
+        <a class="link__item" href="https://eggs.ca/" target="_blank">Get Cracking</a>
       </div>
 
       <div class="link__container">
-        <img class="link__img" src="" alt="">
-        <a class="link__item" href=""></a>
+        <img class="thumbnail" src="images/thrasher.jpg" alt="a skateboard displaying the thrasher logo">
+        <a class="link__item" href="https://www.thrashermagazine.com" target="_blank">Thrasher</a>
       </div>
 
       <div class="link__container">
-        <img class="link__img" src="" alt="">
-        <a class="link__item" href=""></a>
+        <img class="thumbnail" src="images/shark_teeth.jpg" alt="a shark swimming">
+        <a class="link__item" href="https://saveourseas.com/worldofsharks/shark-teeth" target="_blank">All about shark teeth</a>
       </div>
 
       <div class="link__container">
-        <img class="link__img" src="" alt="">
-        <a class="link__item" href=""></a>
+        <img class="thumbnail" src="images/rocking_chair.jpg" alt="a couple of rocking chairs">
+        <a class="link__item" href="https://www.instructables.com/Wooden-Rocking-Chair/" target="_blank">How to build a rocking chair</a>
       </div>
 
       <div class="link__container">
-        <img class="link__img" src="" alt="">
-        <a class="link__item" href=""></a>
+        <img class="thumbnail" src="images/ostrich_.jpg" alt="an ostrich">
+        <a class="link__item" href="https://nationalzoo.si.edu/animals/ostrich" target="_blank">Ostriches?</a>
       </div>
 
       <div class="link__container">
-        <img class="link__img" src="" alt="">
-        <a class="link__item" href=""></a>
+        <img class="thumbnail" src="images/shoes_.jpg" alt="large collection of sneakers">
+        <a class="link__item" href="https://en.wikipedia.org/wiki/Shoe" target="_blank">What's a shoe?</a>
       </div>
     </div>
 
   </div>
 </body>
 </html>
-
-
-<!-- eggs page = https://eggs.ca/ -->
-
-<!--  thrasher magazine = https://www.thrashermagazine.com/-->
-
-<!-- shark teeth = https://saveourseas.com/worldofsharks/shark-teeth -->
-
-<!--  rocking chair = https://www.instructables.com/Wooden-Rocking-Chair/-->
-
-<!-- ostrich = https://nationalzoo.si.edu/animals/ostrich -->
-
-<!-- shoes = https://en.wikipedia.org/wiki/Shoe -->
