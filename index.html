@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoff Cowlfeather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   <style>
-    /* html, body {margin: 0; padding:0; font-family: Tahoma, Geneva, sans-serif;} */
+    
     html {
       min-height: 100%;
     }
@@ -15,16 +19,24 @@
       padding-bottom: 40px;
       background-image: linear-gradient(#a2d2ff, #cdb4db, #ffafcc);
       min-height: 100%;
-      font-family: Tahoma, Geneva, sans-serif;
-      display: flex;
-      justify-content: center;
+      font-family: Impact;
+      font-family: "Montserrat"
+      
     }
 
-    /* img {max-width: 100%;} */
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
-    .main__container {
+    .main-container {
       max-width: 640px;
       margin: auto;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .avatar-image {
@@ -34,32 +46,35 @@
       object-fit: cover;
     }
 
-    .socials__row {
+    .name-row {
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 24px;
+      font-weight: 900;
+      color: white;
+    }
+
+    .social-icons-row {
+      margin-bottom: 20px;
       display: flex;
       justify-content: space-around;
-      width: 100%;
     }
     
-    .social__icons {
+    .social-icons {
       width: 30px;
     }
 
-    .links__row {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      width: 100%;
-      margin: 16px;
-    }
 
-    .link__container { 
-      padding: 4px;
-      background-color: rgb(127, 255, 212, 0.5);
-      width: 100%;
+    .item { 
+      background-color: rgba(233, 45, 67, 0.5);
+      margin-bottom: 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      border-radius: 100px;
+      border-radius: 200px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: -9px 9px 22px -3px rgba(0,0,0,0.1);
     }
 
     .thumbnail {
@@ -70,65 +85,64 @@
       
     }
 
-    .link__item {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      margin: 0 auto;
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
     }
       
     
   </style>
 </head>
 <body>
-  <div class="main__container">
-    <div class="image__row">
+  <div class="main-container">
+
+    <div class="image-row">
       <img class="avatar-image" src="images/selfie_two.jpg" alt="portait of our main character">
     </div>
 
-    <div class="name__row">
-      <h1>Geoff Cowlfeather</h1>
+    <div class="name-row">
+      Geoff Cowlfeather
     </div>
 
-    <div class="socials__row">
-      <a href="https://github.com/" target="_blank"><img class="social__icons"  src="images/github-brands-solid-full.svg"></a>
+    <div class="social-icons-row">
+      <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-      <a href="https://www.linkedin.com/" target="_blank"><img class="social__icons"  src="images/linkedin-brands-solid-full.svg"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
-      <a href="https://www.instagram.com/" target="_blank"><img class="social__icons"  src="images/instagram-brands-solid-full (1).svg"></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
-      <a href="https://x.com/" target="_blank"><img class="social__icons"  src="images/twitter-brands-solid-full.svg"></a>
+      <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
 
-    <div class="links__row">
-      <div class="link__container">
+    <div class="links-row">
+      <div class="item">
         <img class="thumbnail" src="images/eggs.jpg" alt="bundle of eggs">
-        <a class="link__item" href="https://eggs.ca/" target="_blank">Get Cracking</a>
+        <a class="link-text" href="https://eggs.ca/" target="_blank">Get Cracking</a>
       </div>
 
-      <div class="link__container">
+      <div class="item">
         <img class="thumbnail" src="images/thrasher.jpg" alt="a skateboard displaying the thrasher logo">
-        <a class="link__item" href="https://www.thrashermagazine.com" target="_blank">Thrasher</a>
+        <a class="link-text" href="https://www.thrashermagazine.com" target="_blank">Thrasher</a>
       </div>
 
-      <div class="link__container">
+      <div class="item">
         <img class="thumbnail" src="images/shark_teeth.jpg" alt="a shark swimming">
-        <a class="link__item" href="https://saveourseas.com/worldofsharks/shark-teeth" target="_blank">All about shark teeth</a>
+        <a class="link-text" href="https://saveourseas.com/worldofsharks/shark-teeth" target="_blank">All about shark teeth</a>
       </div>
 
-      <div class="link__container">
+      <div class="item">
         <img class="thumbnail" src="images/rocking_chair.jpg" alt="a couple of rocking chairs">
-        <a class="link__item" href="https://www.instructables.com/Wooden-Rocking-Chair/" target="_blank">How to build a rocking chair</a>
+        <a class="link-text" href="https://www.instructables.com/Wooden-Rocking-Chair/" target="_blank">How to build a rocking chair</a>
       </div>
 
-      <div class="link__container">
+      <div class="item">
         <img class="thumbnail" src="images/ostrich_.jpg" alt="an ostrich">
-        <a class="link__item" href="https://nationalzoo.si.edu/animals/ostrich" target="_blank">Ostriches?</a>
+        <a class="link-text" href="https://nationalzoo.si.edu/animals/ostrich" target="_blank">Ostriches?</a>
       </div>
 
-      <div class="link__container">
+      <div class="item">
         <img class="thumbnail" src="images/shoes_.jpg" alt="large collection of sneakers">
-        <a class="link__item" href="https://en.wikipedia.org/wiki/Shoe" target="_blank">What's a shoe?</a>
+        <a class="link-text" href="https://en.wikipedia.org/wiki/Shoe" target="_blank">What's a shoe?</a>
       </div>
     </div>
 
