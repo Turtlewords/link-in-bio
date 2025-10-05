@@ -1,5 +1,9 @@
-# static-html-template
+# Link In Bio
 
-Use this template to create static HTML websites and deploy them on Render.
+Link In Bio is a static html page containing a variety of interesting links.
 
-Some rights reserved — see [LICENSE.txt](LICENSE.txt)
+## Usage
+
+Click on any of the links to visit an external webpage and learn about that subject
+
+
